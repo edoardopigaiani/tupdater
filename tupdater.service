@@ -1,0 +1,8 @@
+[Unit]
+Description=Launch tupdater as a systemd service
+
+[Service]
+ExecStart=/usr/bin/tupdater
+
+[Install]
+WantedBy=multi-user.target

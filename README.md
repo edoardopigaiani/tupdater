@@ -1,2 +1,3 @@
 # tupdater
-Schedule Telegram updated with systemd and its timers
+
+Everything needed is in the repo, feel free to steal as always.

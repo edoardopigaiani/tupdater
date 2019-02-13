@@ -1,0 +1,5 @@
+[Unit]
+Description=Run tupdater.service every 24 hours
+
+[Timer]
+OnCalendar=*:0/24hr
