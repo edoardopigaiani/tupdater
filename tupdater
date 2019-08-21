@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+# Create temporary directory to store the update package then cd into it
+mkdir "/tmp/telegram/";
+cd "/tmp/telegram/";
+
+# Download the update package
+wget "https://telegram.org/dl/desktop/linux";
+
+# Rename it and untar it
+mv linux telegram.tar.xz;
+tar -xvf telegram.tar.xz;
+
+# Cd into the newly created directory
+cd "Telegram/";
+
+# Move the Telegram binary to /usr/bin/
+sudo mv Telegram "/usr/bin/";
+
+# Remove the temporary directory
+rm -r "/tmp/telegram/";
